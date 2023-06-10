@@ -4,19 +4,19 @@
 // 22 3 9 -> 22
 
 Console.Write("Введите первое число => "); //Вывод приглашения на экран
-string imputedString_1 = Console.ReadLine(); // Ввод пользователя (строка)
+string imputedString_1 = Console.ReadLine(); // Ввод пользователем первого числа (строка)
 Console.Write("Введите второе число => "); //Вывод приглашения на экран
-string imputedString_2 = Console.ReadLine(); // Ввод пользователя (строка)
+string imputedString_2 = Console.ReadLine(); // Ввод пользователем второго числа (строка)
 Console.Write("Введите третье число => "); //Вывод приглашения на экран
-string imputedString_3 = Console.ReadLine(); // Ввод пользователя (строка)
-int number_1 = Convert.ToInt32(imputedString_1); // Преобразование строки в число
-int number_2 = Convert.ToInt32(imputedString_2); // Преобразование строки в число
-int number_3 = Convert.ToInt32(imputedString_3); // Преобразование строки в число
-int max = number_1; // Присвоение значения в переменной
+string imputedString_3 = Console.ReadLine(); // Ввод пользователем третьего числа (строка)
+int number_1 = Convert.ToInt32(imputedString_1); // Преобразование строки в целое число
+int number_2 = Convert.ToInt32(imputedString_2); // Преобразование строки в целое число
+int number_3 = Convert.ToInt32(imputedString_3); // Преобразование строки в целое число
+int max = number_1; // Присвоение значения в переменной max
 
-if (number_1 > max) max = number_1; // Если первое число больше переменной max, то меняем значение на это число.
-if (number_2 > max) max = number_2; // Если второе число больше переменной max, то меняем значение на это число.
-if (number_3 > max) max = number_3; // Если третье число больше переменной max, то меняем значение на это число.
+if (number_1 > max) max = number_1; // Если первое число больше переменной max, то меняем значение max на это число.
+if (number_2 > max) max = number_2; // Если второе число больше переменной max, то меняем значение max на это число.
+if (number_3 > max) max = number_3; // Если третье число больше переменной max, то меняем значение max на это число.
 
 
 Console.Write($"Наибольшее число = {max}."); // Вывод результата на экран
