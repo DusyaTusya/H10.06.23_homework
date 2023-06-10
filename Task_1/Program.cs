@@ -6,8 +6,8 @@ Console.Write("Введите первое число => "); //Вывод при
 string imputedString_1 = Console.ReadLine(); // Ввод пользователем первого числа(строка)
 Console.Write("Введите второе число => "); //Вывод приглашения на экран
 string imputedString_2 = Console.ReadLine(); // Ввод пользователем второго числа (строка)
-int number_1 = Convert.ToInt32(imputedString_1); // Преобразование строки в число
-int number_2 = Convert.ToInt32(imputedString_2); // Преобразование строки в число
+int number_1 = Convert.ToInt32(imputedString_1); // Преобразование строки в целое число
+int number_2 = Convert.ToInt32(imputedString_2); // Преобразование строки в целое число
 int max = 0; // Объявление переменной max
 int min = 0; // Объявление переменной min
 
