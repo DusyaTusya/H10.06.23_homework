@@ -3,32 +3,30 @@
 // a = -9 b = -3 -> max = -3, min = -9
 
 Console.Write("Введите первое число => "); //Вывод приглашения на экран
-string imputedString_1 = Console.ReadLine(); // Ввод пользователя (строка)
+string imputedString_1 = Console.ReadLine(); // Ввод пользователем первого числа(строка)
 Console.Write("Введите второе число => "); //Вывод приглашения на экран
-string imputedString_2 = Console.ReadLine(); // Ввод пользователя (строка)
+string imputedString_2 = Console.ReadLine(); // Ввод пользователем второго числа (строка)
 int number_1 = Convert.ToInt32(imputedString_1); // Преобразование строки в число
 int number_2 = Convert.ToInt32(imputedString_2); // Преобразование строки в число
-int max = 0;
-int min = 0;
-//int square = number_1 * number_1; // Вычисление квадрата (логига программы)
-//Console.WriteLine($"Квадрат числа {number_1} равен {square}"); // Вывод результата
-//Console.Write("Введите второе число =>"); //Вывод приглашения на экран
-if (number_1 > number_2)
+int max = 0; // Объявление переменной max
+int min = 0; // Объявление переменной min
+
+if (number_1 > number_2) // Проверяем условие, что первое число больше второго
     {
-    max = number_1;
-    min = number_2;
-    Console.WriteLine($"Большее число: {max}. Меньшее число: {min}.");
+    max = number_1; // Записываем в переменную max первое число
+    min = number_2; // Записываем в переменную min второе число
+    Console.WriteLine($"Большее число: {max}. Меньшее число: {min}."); // Вывод на экран результатов проверки
     }
 
-if (number_2 > number_1)
+if (number_2 > number_1) // Проверяем условие, что второе число больше первого
     {
-    max = number_2;
-    min = number_1;
-    Console.WriteLine($"Большее число: {max}. Меньшее число: {min}.");
+    max = number_2; // Записываем в переменную max второе число
+    min = number_1; // Записываем в переменную min первое число
+    Console.WriteLine($"Большее число: {max}. Меньшее число: {min}."); // Вывод на экран результатов проверки
     }
-if (number_1 == number_2)
+if (number_1 == number_2) // Проверяем условие, что оба числа равны
     {
-    Console.WriteLine($"Оба числа равны");
+    Console.WriteLine($"Оба числа равны"); // Вывод результатов проверки
     }
     
 
